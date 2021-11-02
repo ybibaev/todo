@@ -27,15 +27,20 @@ export default {
 </script>
 
 <template>
-  <div class="todolist">
+  <div class="todolist column col-8">
     <TodoInput :list="this.todos" placeholder="Just add a new task" />
     <TodoItems :list="this.todos" />
   </div>
 </template>
 
-<style scoped>
+<style>
 .todolist {
-  margin: 60px;
-  align-content: auto;
+  margin: 5% auto;
+  max-width: 600px;
+  overflow-wrap: break-word;
+}
+
+li {
+  text-overflow: ellipsis;
 }
 </style>

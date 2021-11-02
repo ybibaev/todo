@@ -1,8 +1,9 @@
 <script>
+import TodoInput from "./TodoInput.vue";
 import TodoItem from "./TodoItem.vue";
 
 export default {
-  components: { TodoItem },
+  components: { TodoItem, TodoInput },
   props: ["list"],
   methods: {
     removeItem(position, target) {
