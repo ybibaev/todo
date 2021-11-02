@@ -39,8 +39,4 @@ export default {
   max-width: 600px;
   overflow-wrap: break-word;
 }
-
-li {
-  text-overflow: ellipsis;
-}
 </style>
