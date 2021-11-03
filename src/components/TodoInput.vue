@@ -7,7 +7,7 @@ export default {
   },
   props: ["list", "placeholder"],
   methods: {
-    addInput(event) {
+    addItem(event) {
       if (this.rawInput === "") {
         return;
       }
@@ -29,7 +29,7 @@ export default {
     <input
       v-model.trim.lazy="rawInput"
       class="form-input"
-      @keyup.enter="addInput"
+      @keyup.enter="addItem"
       :placeholder="placeholder"
     />
     <button @click="addInput" class="btn btn-primary">Add</button>
