@@ -8,6 +8,7 @@ export default {
     const rawTodos = window.localStorage.getItem("todos");
 
     return {
+      isLogged: false,
       todos: (rawTodos && JSON.parse(rawTodos)) || [
         "Learn JavaScript",
         "Learn Vue",

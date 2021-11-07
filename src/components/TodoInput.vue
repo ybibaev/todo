@@ -1,10 +1,14 @@
 <script>
+import Login from "./Login.vue"
+
+
 export default {
   data() {
     return {
       rawInput: "",
     };
   },
+  components: { Login },
   props: ["list", "placeholder"],
   methods: {
     addItem(event) {
@@ -26,6 +30,7 @@ export default {
 
 <template>
   <div class="input-group">
+    <Login />
     <input
       v-model.trim.lazy="rawInput"
       class="form-input"
