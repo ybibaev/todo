@@ -32,6 +32,6 @@ export default {
       @keyup.enter="addItem"
       :placeholder="placeholder"
     />
-    <button @click="addInput" class="btn btn-primary">Add</button>
+    <button @click="addItem" class="btn btn-primary">Add</button>
   </div>
 </template>
